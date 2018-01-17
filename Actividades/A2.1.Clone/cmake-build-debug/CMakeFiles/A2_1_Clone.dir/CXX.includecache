@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Actividades/A2.1.Clone/ejercicio.cpp
+iostream
+-
+
+C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Actividades/A2.1.Clone/main.cpp
+iostream
+-
+
+C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Actividades/A2.1.Clone/prototype.cpp
+
