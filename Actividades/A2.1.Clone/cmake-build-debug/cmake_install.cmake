@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Actividades/A2.1.Clone
+# Install script for directory: C:/Users/i7/Desktop/A00820377_AyMSS18/Actividades/A2.1.Clone
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Actividades/A2.1.Clone/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/i7/Desktop/A00820377_AyMSS18/Actividades/A2.1.Clone/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
