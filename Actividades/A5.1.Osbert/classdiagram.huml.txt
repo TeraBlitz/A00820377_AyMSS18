@@ -1,0 +1,23 @@
+@startuml
+
+class Galery{
++findPainting()
+-list paintings
+}
+
+class painting{
+    -string artist
+    -int yearPainted
+    -int price
+    -int yearBought
+
+}
+
+class buy{
+    -string sellerName
+    -string SellerAdress
+    -int priceSold
+    -painting paintingSold;
+}
+
+
