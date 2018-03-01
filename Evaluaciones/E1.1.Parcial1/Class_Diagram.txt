@@ -1,0 +1,83 @@
+@startuml
+class Command{
+    +virtual execute()
+}
+class Receiver{
+    +sendSMS()
+    +call()
+    +sendEmail()
+}
+class Caller{
+    -Command *cmd
+    +setCommand(Command *cmd_temp)
+    +executeAction()
+}
+class ConcreteCommandCall{
+    -Receiver *r
+    +execute
+}
+class ConcreteCommandSMS{
+    -Receiver *r
+    +execute
+}
+class ConcreteCommandEmail{
+    -Receiver *r
+    -string from
+    +execute
+}
+class Contacto{
+    -string iId
+    -string sNombre
+    -string sApellido
+    -string sContacto
+    -string sEmail
+    -string sTelephono 
+    -Caller *caller
+    -Receiver *re
+    +contacto()
+    +contacto(sNombre,sApellido,sContacto,sEmail,sTelephono)
+}
+
+class SendEmail{
+-sSubject
+-sBody
+-instance
++SendEmail(sName,sApeido,sEmail)
++getInstance(sName,sApeido,sEmail)
+}
+
+class SendSMS{
+-string message
+-SendSMS instance
++SendsSMS(string Telephono)
++getInstance(string Telephono)
+}
+
+class Call{
+-string message
+-Call intance
++Call(string Telephono)
++getInstance(string Telephono)
+}
+
+
+
+Caller *--> Command
+ConcreteCommandCall --|>Command
+ConcreteCommandSMS --|>Command
+ConcreteCommandEmail --|>Command
+ConcreteCommandCall --> Receiver
+ConcreteCommandSMS --> Receiver
+ConcreteCommandEmail --> Receiver
+Cliente --> Receiver
+Cliente --> Caller
+Contacto --|>SendEmail
+Contacto--|>SendSMS
+Contacto--|>Call
+SendEmail-->ConcreteCommandEmail
+SendSMS-->ConcreteCommandSMS
+Call-->ConcreteCommandCall
+SendEmail--|>SendEmail
+SendSMS--|>SendSMS
+Call--|>Call
+@enduml

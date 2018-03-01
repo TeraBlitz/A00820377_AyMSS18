@@ -1,0 +1,24 @@
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+
+:Server: as Server
+:Client: as Client
+
+
+rectangle {
+  Server-->(Leer base de datos) 
+  Server --> (Clasifica cleintes por preferencia)
+  Server --> (Manda SMS)
+  Server --> (Manda llamada)
+  Server --> (Manda email)
+
+
+
+
+  Client --> (recibe sms)
+  Client --> (recibe llamada)
+  Client --> (recibe email)
+}
+@endluml

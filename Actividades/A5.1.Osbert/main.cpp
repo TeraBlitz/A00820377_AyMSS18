@@ -19,10 +19,13 @@ public:
     Painting paintingSold;
 };
 
-class Spy
+class Gallery
 {
-    Painting wanted[];
-    Painting findPaiting(int year
+    Painting owned[];
+    Painting findPainting(int year,string artist)
+    {
+        
+    }
 
 };
 int main() {
