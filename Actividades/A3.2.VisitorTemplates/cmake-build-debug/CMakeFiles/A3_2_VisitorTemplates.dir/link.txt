@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2017.2.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\A3_2_VisitorTemplates.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\A3_2_VisitorTemplates.dir/objects.a @CMakeFiles\A3_2_VisitorTemplates.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\A3_2_VisitorTemplates.dir/objects.a -Wl,--no-whole-archive  -o A3_2_VisitorTemplates.exe -Wl,--out-implib,libA3_2_VisitorTemplates.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\A3_2_VisitorTemplates.dir\linklibs.rsp

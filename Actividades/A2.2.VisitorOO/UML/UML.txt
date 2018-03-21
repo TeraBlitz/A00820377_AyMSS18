@@ -1,0 +1,58 @@
+@startuml
+
+class IVisitor{
++string out
+-void visit
+}
+
+class DocPart{
++string text
+-void accept
+}
+
+class Bold{
++string text
+-void accept
+}
+
+Class Text{
++string text
+-void accept
+}
+
+Class HyperLink{
++string URL
++string text
+-void accept;
+}
+
+class HTMLVisitor{
+-void visit;
+}
+
+Class TextVisitor{
+-void visit;
+}
+
+Class LatexVisitor{
+-void visit;
+}
+
+class Document{
+    +list<DocPart> docpart;
+    -void accept;
+}
+
+IVisitor<|--HTMLVisitor
+IVisitor<|-- LatexVisitor
+IVisitor<|--TextVisitor
+
+DocPart<|--Text
+DocPart<|--Bold
+DocPart<|--HyperLink
+
+Document o-- DocPart
+Document o-- IVisitor
+
+
+@enduml

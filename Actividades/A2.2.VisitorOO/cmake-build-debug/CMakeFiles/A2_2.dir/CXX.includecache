@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Actividades/A2.2/main.cpp
+iostream
+-
+string
+-
+list
+-
+

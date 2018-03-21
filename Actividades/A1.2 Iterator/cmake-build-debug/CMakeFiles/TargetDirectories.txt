@@ -1,0 +1,3 @@
+C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Actividades/A1.2 Iterator/cmake-build-debug/CMakeFiles/A1_2_Iterator.dir
+C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Actividades/A1.2 Iterator/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Actividades/A1.2 Iterator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
