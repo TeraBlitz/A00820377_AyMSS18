@@ -1,3 +1,3 @@
-C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Evaluaciones/E2.2.Parcial2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Evaluaciones/E2.2.Parcial2/cmake-build-debug/CMakeFiles/E2_2_Parcial2.dir
-C:/Users/Tera/Desktop/SCHOOL/A00820377_AyMSS18/Evaluaciones/E2.2.Parcial2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/i7/Desktop/school/A00820377_AyMSS18/Evaluaciones/E2.2.Parcial2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/i7/Desktop/school/A00820377_AyMSS18/Evaluaciones/E2.2.Parcial2/cmake-build-debug/CMakeFiles/E2_2_Parcial2.dir
+C:/Users/i7/Desktop/school/A00820377_AyMSS18/Evaluaciones/E2.2.Parcial2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
