@@ -1,0 +1,16 @@
+<h2 class="mat-title">{{ id ? 'Editar' : 'Agregar' }} receta</h2>
+<mat-card>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Nombre" name="name" [(ngModel)]="r.name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Costo" name="cost" [(ngModel)]="r.cost">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Cantidad" name="quantity" [(ngModel)]="r.quantity">
+    </mat-form-field>
+  </form>
+</mat-card>
+<button mat-raised-button color="primary" (click)="id ? updateR() : createR()">{{ id ? 'GUARDAR' : 'AGREGAR' }}</button>
+<button mat-raised-button [routerLink]="['/admin/recetas/list']">REGRESAR</button>

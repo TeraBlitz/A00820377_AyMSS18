@@ -1,0 +1,12 @@
+<mat-card>
+  <div class="property">
+    <div class="key">Email</div>
+    <div class="value">{{ admin.email }}</div>
+  </div>
+  <div class="property">
+    <div class="key">Usuario</div>
+    <div class="value">{{ admin.username }}</div>
+  </div>
+</mat-card>
+<button mat-raised-button color="danger" (click)="deleteAdmin()">BORRAR</button>
+<button mat-raised-button [routerLink]="['/admin/admin/list']">REGRESAR</button>

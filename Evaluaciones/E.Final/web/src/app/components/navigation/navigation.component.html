@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <span>Inventarios</span>
+</mat-toolbar>
+<div class="wrapper">
+  <mat-drawer-container>
+    <mat-drawer class="mat-elevation-z4" mode="side" opened="true">
+      <mat-list>
+        <mat-list-item [routerLink]="['/admin/materias-primas/list']">Materias primas</mat-list-item>
+        <mat-list-item [routerLink]="['/admin/recetas/list']">Recetas</mat-list-item>
+        <mat-list-item [routerLink]="['/admin/admin/list']">Usuarios</mat-list-item>
+        <mat-list-item [routerLink]="['/login']">Salir</mat-list-item>
+      </mat-list>
+    </mat-drawer>
+    <mat-drawer-content class="container">
+      <ng-content></ng-content>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

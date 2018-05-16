@@ -1,0 +1,16 @@
+<h2 class="mat-title">{{ id ? 'Editar' : 'Agregar' }} materia prima</h2>
+<mat-card>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Nombre" name="name" [(ngModel)]="mp.name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Costo" name="costo" [(ngModel)]="mp.cost">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Categoría" name="category" [(ngModel)]="mp.category">
+    </mat-form-field>
+  </form>
+</mat-card>
+<button mat-raised-button color="primary" (click)="id ? updateMp() : createMp()">{{ id ? 'GUARDAR' : 'AGREGAR' }}</button>
+<button mat-raised-button [routerLink]="['/admin/materias-primas/list']">REGRESAR</button>

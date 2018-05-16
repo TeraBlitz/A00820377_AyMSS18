@@ -1,0 +1,21 @@
+version: "3"
+services:
+  web:
+    container_name: final-app
+    build: ./web
+    ports:
+      - "80:80"
+  app:
+    container_name: final-server
+    restart: always
+    build: ./server
+    ports:
+      - "13001:13001"
+  neo4j:
+    container_name: final-db
+    image: neo4j:latest
+    environment:
+      - NEO4J_AUTH=neo4j/test
+    ports: 
+      - "7687:7687"
+      - "7474:7474"

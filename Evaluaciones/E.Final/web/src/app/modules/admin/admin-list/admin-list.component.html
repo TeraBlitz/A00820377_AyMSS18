@@ -1,0 +1,10 @@
+<h2 class="mat-title">Usuarios</h2>
+<mat-card>
+  <mat-list>
+    <mat-list-item *ngFor="let admin of admins">{{ admin.name }}
+      <span class="mat-caption">{{ admin.email }}</span>
+    </mat-list-item>
+    <mat-list-item *ngIf="admins.length === 0">No hay registros aún</mat-list-item>
+  </mat-list>
+</mat-card>
+<button mat-raised-button color="primary" [routerLink]="['/admin/admin/new']">AGREGAR USUARIO</button>

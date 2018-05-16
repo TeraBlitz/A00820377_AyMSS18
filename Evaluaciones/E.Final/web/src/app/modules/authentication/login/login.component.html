@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <mat-card>
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Usuario" name="username" [(ngModel)]="username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Contraseña" name="password" [(ngModel)]="password">
+      </mat-form-field>
+    </form>
+  </mat-card>
+  <button mat-raised-button color="primary" (click)="login()">ENTRAR</button>
+</div>

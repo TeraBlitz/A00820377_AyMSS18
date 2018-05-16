@@ -1,0 +1,21 @@
+img {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100vh;
+  margin-top: -64px;
+  padding-top: 64px;
+
+  mat-drawer-container {
+    height: 100%;
+
+    mat-drawer {
+      min-width: 10%;
+    }
+
+    .container {
+      padding: 1rem 10%;
+    }
+  }
+}

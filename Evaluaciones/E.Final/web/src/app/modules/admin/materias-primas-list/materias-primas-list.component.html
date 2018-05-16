@@ -1,0 +1,10 @@
+<h2 class="mat-title">Materias primas</h2>
+<mat-card>
+  <mat-list>
+    <mat-list-item *ngFor="let mp of mps" [routerLink]="['/admin/materias-primas/' + mp.id]">{{ mp.name }}
+      <span class="mat-caption">{{ mp.category }}</span>
+    </mat-list-item>
+    <mat-list-item *ngIf="mps.length === 0">No hay registros aún</mat-list-item>
+  </mat-list>
+</mat-card>
+<button mat-raised-button color="primary" [routerLink]="['/admin/materias-primas/new']">AGREGAR MATERIA PRIMA</button>

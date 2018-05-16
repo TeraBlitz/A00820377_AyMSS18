@@ -1,0 +1,10 @@
+<h2 class="mat-title">Recetas</h2>
+<mat-card>
+  <mat-list>
+    <mat-list-item *ngFor="let r of rs" [routerLink]="['/admin/recetas/' + r.id]">{{ r.name }}
+      <span class="mat-caption">{{ r.quantity }}</span>
+    </mat-list-item>
+    <mat-list-item *ngIf="rs.length === 0">No hay registros aún</mat-list-item>
+  </mat-list>
+</mat-card>
+<button mat-raised-button color="primary" [routerLink]="['/admin/recetas/new']">AGREGAR RECETA</button>

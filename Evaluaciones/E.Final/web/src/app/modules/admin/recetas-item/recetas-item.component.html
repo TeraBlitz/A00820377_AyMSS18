@@ -1,0 +1,18 @@
+<h2 class="mat-title">Receta #{{ r.id }}</h2>
+<mat-card>
+  <div class="property">
+    <div class="key">Nombre</div>
+    <div class="value">{{ r.name }}</div>
+  </div>
+  <div class="property">
+    <div class="key">Costo</div>
+    <div class="value">{{ r.cost }}</div>
+  </div>
+  <div class="property">
+    <div class="key">Cantidad</div>
+    <div class="value">{{ r.quantity }}</div>
+  </div>
+</mat-card>
+<button mat-raised-button color="primary" [routerLink]="['/admin/recetas/' + r.id + '/edit']">EDITAR</button>
+<button mat-raised-button color="danger" (click)="deleteR()">BORRAR</button>
+<button mat-raised-button [routerLink]="['/admin/recetas/list']">REGRESAR</button>

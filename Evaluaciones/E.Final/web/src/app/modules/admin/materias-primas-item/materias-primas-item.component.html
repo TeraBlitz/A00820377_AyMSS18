@@ -1,0 +1,14 @@
+<h2 class="mat-title">Receta #{{ mp.id }}</h2>
+<mat-card>
+  <div class="property">
+    <div class="key">Nombre</div>
+    <div class="value">{{ mp.name }}</div>
+  </div>
+  <div class="property">
+    <div class="key">Costo</div>
+    <div class="value">{{ mp.cost }}</div>
+  </div>
+</mat-card>
+<button mat-raised-button color="primary" [routerLink]="['/admin/materias-primas/' + mp.id + '/edit']">EDITAR</button>
+<button mat-raised-button color="danger" (click)="deleteMp()">BORRAR</button>
+<button mat-raised-button [routerLink]="['/admin/materias-primas/list']">REGRESAR</button>

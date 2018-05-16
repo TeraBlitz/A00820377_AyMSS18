@@ -1,0 +1,16 @@
+<h2 class="mat-title">Agregar usuario</h2>
+<mat-card>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Email" name="email" [(ngModel)]="admin.email">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Usuario" name="user" [(ngModel)]="admin.username">
+    </mat-form-field>
+    <mat-form-field *ngIf="!id">
+      <input matInput type="password" placeholder="Contraseña" name="password" [(ngModel)]="admin.password">
+    </mat-form-field>
+  </form>
+</mat-card>
+<button mat-raised-button color="primary" (click)="id ? updateAdmin() : createAdmin()">{{ id ? 'GUARDAR' : 'AGREGAR' }}</button>
+<button mat-raised-button [routerLink]="['/admin/admin/list']">REGRESAR</button>
